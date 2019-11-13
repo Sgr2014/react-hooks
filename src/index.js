@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from '../src/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// React负责控制逻辑，数据 -> VDOM
+// ReactDOM VDOM -> DOM
+// const user = {
+//   name: 'Shary',
+//   age: 18
+// }
+// function userMsg(user) {
+//   return user.name + '的年龄是' + user.age + '岁'
+// }
+// const jsx = <h3>{userMsg(user)}</h3>
+ReactDOM.render(<App/>, document.querySelector('#root'));
