@@ -1,37 +1,70 @@
+# Getting Started with Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
+
 In the project directory, you can run:
-```
-`npm start` // 启动项目
-```
 
-## JSX
-是一种JS的语法扩展，其格式比较像模板语言，但事实上完全是在JS内部实现的。
-实质上是React.createElement的调用
+### `npm start`
 
-## 组件
-抽象的独立功能模块，react应用程序是由组件构建而成
-### 组件的 2 种形式
-+ class组件
-  - 通常拥有状态和生命周期
-  - 继承于Component
-  - 实现render方法
-+ function组件
-  - 通常无状态
-    * React16.8开始引入hooks,函数组件也拥有状态
-  - 仅关注内容展示，返回渲染结果
-### 组件状态管理
-+ 类组件中状态管理<br/>
-  setState只有在合成事件或生命周期函数中是异步的，在原生事件addEventListener、
-  setTimeout或setInterval等都是同步的。
-  - setState
-    * 是异步的
-    * 修改状态必须用setState，不能直接state.x
-    * 批量操作
-      + 多次修改同一个状态仅更新一次
-      + 需要同时修改多个状态可一起进行
-  - setState是异步的，获取最新值
-    * 本身回调
-    * setTimeout、setInterval...
-    * 原生事件addEventListener等
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
